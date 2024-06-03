@@ -1,23 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" href="assets/css/main.css">
-    <script src="assets/javascript/js.js"></script>
+    <script src="assets/js/js.js" defer></script>
+    <link rel="shortcut icon" href="assets/images/Logo-Goth.svg" type="image/x-icon">
 </head>
-<body>
-    
-    <header>
 
+<body>
+    <!-- #region HEADER -->
+    <header>
+        <div>
+            <!-- header image (rel)-->
+            <img id="headerBackgroundImage" src="assets/images/Header-Image-Dinny.jpg" alt="">
+            <!-- header logo image (abs)-->
+            <img id="headerLogoImage" src="assets/images/HeaderLOGO.png" alt="">
+            <!-- TOP NAVIGATION -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Dinny</a></li>
+                <li><a href="#staff">The Staff</a></li>
+                <li><a href="#delivery">Delivery</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Sign In</a>
+                    <li><a href="#"  onclick="window.myDialog.show();">Book</a></li>
+            </ul>
+        </nav>
     </header>
+
+<!-- KONTAKT DIALOG -->
+<dialog id="myDialog">
+    <section class="forms">
+        <form name="myForm" id="myForm" onsubmit="return validateForm()" method="get">
+            <fieldset>
+                <legend><h3>Simpel FormValidering</h3></legend>
+                <!-- fornavn -->
+                <label for="txtFirstName">Dit Fornavn</label>
+                <input type="text" name="txtFirstName" id="txtFirstName" placeholder="...">
+                <!-- efternavn -->
+                <label for="txtLastName">Dit efternavn</label>
+                <input type="text" name="txtLastName" id="txtLastName" placeholder="...">
+                <!-- mail -->
+                <label for="txtEmail">Din Email</label>
+                <input type="email" name="txtEmail" id="txtEmail" placeholder="din@Email.XX">
+                <!-- adgangskode -->
+                <label for="txtAdgangskode">Din adgangskode</label>
+                <input type="password" name="txtAdgangskode" id="txtAdgangskode" placeholder="...">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </section>
+    <span>
+        <a href="#" onclick="window.myDialog.close();">✖</a>
+    </span>
+</dialog>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- #endregion HEADER -->
+
     <body>
-        
+        <section class="aboutDinny" id="about">
+            <!-- global h2 -->
+            <h2 class="globalH2">About Dinny</h2>
+            <img src="assets/images/GFX/Staff-01.jpg" alt="Staff 01">
+            <div class="txtContainer">
+                <h3>More About Dinny</h3>
+                <p>Consectetur adipisicing elit. Laudantium ipsum quod dolorum quae dicta pariatur inventore esse. Nobis
+                    quam ex, illum, quia pariatur non, obcaecati voluptas impedit voluptate esse officiis! Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Iusto eligendi, illo expedita at quibusdam adipisci
+                    voluptates sit quia aspernatur. Accusantium illum a autem consequuntur earum laborum explicabo
+                    dolor, eligendi excepturi!</p>
+                <p>Neque ipsa odit, architecto a quae ea commodi consectetur obcaecati quaerat omnis quod vel, corporis
+                    ad enim perspiciatis qui! Lorem ipsum dolor sit amet consectetur adipisicing elit. architecto a quae
+                    ea commodi consectetur obcaecati architecto a quae ea commodi consectetur obcaecati At ut officiis
+                    voluptatem magnam iure aut repellat minima repellendus fugiat ad aperiam, eius vitae ea sit nostrum!
+                    Sequi quam omnis consequatur.</p>
+                <p>Corporis quis, sed dicta, cupiditate praesentium autem deleniti quos Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Atque repellat, quidem enim cupiditate voluptates sapiente veritatis
+                    quis commodi. Officia omnis alias aspernatur, similique veniam maiores delectus expedita quos labore
+                    ducimus. distinctio eius vero sunt maiores debitis!</p>
+                <div id="readMore">
+                    <a href="#">Read More:</a>
+                </div>
+            </div>
+        </section>
+        <section class="theStaff" id="staff">
+            <!-- Global H2 -->
+            <h2 class="globalH2">The Staff</h2>
+            <!-- grid start -->
+            <div class="gridContainerOne">
+                <!-- article 1 -->
+                <article>
+                    <div class="mediaGrid">
+                        <div>
+                            <img src="assets/images/GFX/Staff-02.jpg" alt="Staff One">
+                        </div>
+                        <div>
+                        <h3>Staff One</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus ducimus cupiditate doloribus
+                            totam Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia omnis neque vel
+                            consequuntur molestias quo, facilis id natus alias repudiandae soluta saepe excepturi, deserunt
+                            dolor itaque quaerat porro accusantium ducimus. ut voluptas magnam obcaecati quisquam libero,
+                            cum consequuntur, in sapiente beatae ab iste
+                            dolores nam mollitia nostrum?</p>
+                        <p>Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur cupiditate quo adipisci
+                            neque obcaecati, quidem hic blanditiis recusandae quasi reprehenderit, sequi quibusdam dolore
+                            cum fuga eveniet minus dicta, rem maiores?ipsum dolor sit amet, consectetur adipisicing elit.
+                            Repellat autem hic at labore sit
+                            distinctio necessitatibus beatae, sint quisquam nesciunt voluptates inventore aliquam veritatis
+                            corporis aut cum voluptatum quo in!</p>
+                        <p>Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quibusdam molestias
+                            distinctio architecto debitis. Nemo incidunt ipsum odit officia aliquid, eius maiores est, ad
+                            obcaecati ut odio cupiditate eos! Quidem.ipsum, dolor sit amet consectetur adipisicing elit.
+                            Impedit architecto a, alias amet dolor
+                            nemo ducimus eaque atque molestias saepe assumenda in nam exercitationem. Et temporibus modi
+                            natus explicabo laborum!</p>
+                        <div id="readMore">
+                            <a href="#">Read More:</a>
+                        </div>
+                        </div>
+                    </div>
+                    
+                </article>
+                <!-- article 2 -->
+                <article>
+                    <div class="mediaGrid">
+                    <div>
+                        <img src="assets/images/GFX/Staff-03.jpg" alt="Staff Two">
+                    </div>
+                    <div>
+                    <h3>Staff Two</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus ducimus cupiditate doloribus
+                        totam Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia omnis neque vel
+                        consequuntur molestias quo, facilis id natus alias repudiandae soluta saepe excepturi, deserunt
+                        dolor itaque quaerat porro accusantium ducimus. ut voluptas magnam obcaecati quisquam libero,
+                        cum consequuntur, in sapiente beatae ab iste
+                        dolores nam mollitia nostrum?</p>
+                    <p>Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur cupiditate quo adipisci
+                        neque obcaecati, quidem hic blanditiis recusandae quasi reprehenderit, sequi quibusdam dolore
+                        cum fuga eveniet minus dicta, rem maiores?ipsum dolor sit amet, consectetur adipisicing elit.
+                        Repellat autem hic at labore sit
+                        distinctio necessitatibus beatae, sint quisquam nesciunt voluptates inventore aliquam veritatis
+                        corporis aut cum voluptatum quo in!</p>
+                    <p>Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quibusdam molestias
+                        distinctio architecto debitis. Nemo incidunt ipsum odit officia aliquid, eius maiores est, ad
+                        obcaecati ut odio cupiditate eos! Quidem.ipsum, dolor sit amet consectetur adipisicing elit.
+                        Impedit architecto a, alias amet dolor
+                        nemo ducimus eaque atque molestias saepe assumenda in nam exercitationem. Et temporibus modi
+                        natus explicabo laborum!</p>
+                    <div id="readMore">
+                        <a href="#">Read More:</a>
+                    </div>
+                    </div>
+                </article>
+                <!-- article 3 -->
+                <article>
+                    <div class="mediaGrid">
+                    <div>
+                        <img src="assets/images/GFX/Staff-04.jpg" alt="Staff Three">
+                    </div>
+                    <div>
+                    <h3>Staff Three</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus ducimus cupiditate doloribus
+                        totam Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia omnis neque vel
+                        consequuntur molestias quo, facilis id natus alias repudiandae soluta saepe excepturi, deserunt
+                        dolor itaque quaerat porro accusantium ducimus. ut voluptas magnam obcaecati quisquam libero,
+                        cum consequuntur, in sapiente beatae ab iste
+                        dolores nam mollitia nostrum?</p>
+                    <p>Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur cupiditate quo adipisci
+                        neque obcaecati, quidem hic blanditiis recusandae quasi reprehenderit, sequi quibusdam dolore
+                        cum fuga eveniet minus dicta, rem maiores?ipsum dolor sit amet, consectetur adipisicing elit.
+                        Repellat autem hic at labore sit
+                        distinctio necessitatibus beatae, sint quisquam nesciunt voluptates inventore aliquam veritatis
+                        corporis aut cum voluptatum quo in!</p>
+                    <p>Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quibusdam molestias
+                        distinctio architecto debitis. Nemo incidunt ipsum odit officia aliquid, eius maiores est, ad
+                        obcaecati ut odio cupiditate eos! Quidem.ipsum, dolor sit amet consectetur adipisicing elit.
+                        Impedit architecto a, alias amet dolor
+                        nemo ducimus eaque atque molestias saepe assumenda in nam exercitationem. Et temporibus modi
+                        natus explicabo laborum!</p>
+                    <div id="readMore">
+                        <a href="#">Read More:</a>
+                    </div>
+                    </div>
+                </article>
+                <!-- end grid -->
+            </div>
+        </section>
+        <section class="Delivery" id="delivery">
+            <!-- Global H2 -->
+            <h2 class="globalH2">Delivery</h2>
+            <!-- GRID START -->
+            <div class="gridContainerTwo">
+                <div class="leftImage">
+                    <img src="assets/images/GFX/Delivery.jpg" alt="delevery">
+                </div>
+                <div class="rightTxt">
+                    <h3>Don't move an inch!</h3>
+                    <p>Alias maxime necessitatibus veniam, architecto placeat, explicabo, aspernatur repellat ad fugit
+                        iure consequuntur dolores debitis amet qui porro. Alias blanditiis natus est?</p>
+                    <p>Sed totam recusandae quam impedit vitae sequi quaerat odio dolorem! Sunt ab vel in eos dolores,
+                        odit quidem. Sed modi cumque corporis.</p>
+                    <p>Quasi debitis fuga saepe. Id blanditiis quod quia laudantium distinctio minus corrupti veniam
+                        ipsum, modi vitae dolorem adipisci inventore harum provident velit?</p>
+                    <p>Quis, in? Quos consectetur nemo ex fugiat voluptates in molestiae porro repellendus facilis iure
+                        necessitatibus eos, voluptate iusto. Deleniti numquam a earum?</p>
+                    <p>Alias maxime necessitatibus veniam, architecto placeat, explicabo, aspernatur repellat ad fugit
+                        iure consequuntur dolores debitis amet qui porro. Alias blanditiis natus est?</p>
+                    <div id="readMore">
+                        <a href="#">Order:</a>
+                    </div>
+                </div>
+
+
+                <!-- GRID END -->
+            </div>
+
+
+
+        </section>
+        <section class="DinnyGallery" id="gallery">
+            <!-- global h2 -->
+            <h2 class="globalH2">About Dinny</h2>
+
+            <div class="gridContainerThree">
+
+                <div class="image-container">
+                    <img src="assets/images/GFX/Dinny-01.jpg">
+                    <div class="figure">
+                        <div class="figureContent">
+                            <h3>Gallery 1</h3>
+                            <p>Debitis dicta nam cumque voluptas tempore aliquam corrupti dolore! Magni, quae consequatur! Esse repellat nostrum repellendus itaque adipisci fugiat architecto laboriosam eius!</p>
+                            <p>Similique, id! Aspernatur consectetur ut quae doloremque quisquam reprehenderit enim eveniet repellat quis eum! Rem architecto cumque atque incidunt quia tenetur deleniti.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="assets/images/GFX/Dinny-02.jpg">
+                    <div class="figure">
+                        <div class="figureContent">
+                            <h3>Gallery 2</h3>
+                            <p>Debitis dicta nam cumque voluptas tempore aliquam corrupti dolore! Magni, quae consequatur! Esse repellat nostrum repellendus itaque adipisci fugiat architecto laboriosam eius!</p>
+                            <p>Similique, id! Aspernatur consectetur ut quae doloremque quisquam reprehenderit enim eveniet repellat quis eum! Rem architecto cumque atque incidunt quia tenetur deleniti.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="assets/images/GFX/Dinny-03.jpg">
+                    <div class="figure">
+                        <div class="figureContent">
+                            <h3>Gallery 3</h3>
+                            <p>Debitis dicta nam cumque voluptas tempore aliquam corrupti dolore! Magni, quae consequatur! Esse repellat nostrum repellendus itaque adipisci fugiat architecto laboriosam eius!</p>
+                            <p>Similique, id! Aspernatur consectetur ut quae doloremque quisquam reprehenderit enim eveniet repellat quis eum! Rem architecto cumque atque incidunt quia tenetur deleniti.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="assets/images/GFX/Dinny-04.jpg">
+                    <div class="figure">
+                        <div class="figureContent">
+                            <h3>Gallery 4</h3>
+                            <p>Debitis dicta nam cumque voluptas tempore aliquam corrupti dolore! Magni, quae consequatur! Esse repellat nostrum repellendus itaque adipisci fugiat architecto laboriosam eius!</p>
+                            <p>Similique, id! Aspernatur consectetur ut quae doloremque quisquam reprehenderit enim eveniet repellat quis eum! Rem architecto cumque atque incidunt quia tenetur deleniti.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="assets/images/GFX/Dinny-05.jpg">
+                    <div class="figure">
+                        <div class="figureContent">
+                            <h3>Gallery 5</h3>
+                            <p>Debitis dicta nam cumque voluptas tempore aliquam corrupti dolore! Magni, quae consequatur! Esse repellat nostrum repellendus itaque adipisci fugiat architecto laboriosam eius!</p>
+                            <p>Similique, id! Aspernatur consectetur ut quae doloremque quisquam reprehenderit enim eveniet repellat quis eum! Rem architecto cumque atque incidunt quia tenetur deleniti.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="assets/images/GFX/Dinny-06.jpg">
+                    <div class="figure">
+                        <div class="figureContent">
+                            <h3>Gallery 6</h3>
+                            <p>Debitis dicta nam cumque voluptas tempore aliquam corrupti dolore! Magni, quae consequatur! Esse repellat nostrum repellendus itaque adipisci fugiat architecto laboriosam eius!</p>
+                            <p>Similique, id! Aspernatur consectetur ut quae doloremque quisquam reprehenderit enim eveniet repellat quis eum! Rem architecto cumque atque incidunt quia tenetur deleniti.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="assets/images/GFX/Dinny-07.jpg">
+                    <div class="figure">
+                        <div class="figureContent">
+                            <h3>Gallery 7</h3>
+                            <p>Debitis dicta nam cumque voluptas tempore aliquam corrupti dolore! Magni, quae consequatur! Esse repellat nostrum repellendus itaque adipisci fugiat architecto laboriosam eius!</p>
+                            <p>Similique, id! Aspernatur consectetur ut quae doloremque quisquam reprehenderit enim eveniet repellat quis eum! Rem architecto cumque atque incidunt quia tenetur deleniti.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="assets/images/GFX/Dinny-08.jpg">
+                    <div class="figure">
+                        <div class="figureContent">
+                            <h3>Gallery 8</h3>
+                            <p>Debitis dicta nam cumque voluptas tempore aliquam corrupti dolore! Magni, quae consequatur! Esse repellat nostrum repellendus itaque adipisci fugiat architecto laboriosam eius!</p>
+                            <p>Similique, id! Aspernatur consectetur ut quae doloremque quisquam reprehenderit enim eveniet repellat quis eum! Rem architecto cumque atque incidunt quia tenetur deleniti.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
     <footer>
+        <div class="gridContainerFour">
+            <div class="left">
+                <h2 class="footerHeader">Pin down Dinny</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5373.668297363859!2d9.91818709586771!3d57.051145728861115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sda!2sdk!4v1717404447955!5m2!1sda!2sdk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+            <div class="right">
+                <div>
+                    <h2 class="footerHeader">Address Header</h2>
+                    <p>Roadname, number</p>
+                    <p>ZipCode City Name</p>
+                    <p class="footerHover" id="phoneNumber">-45 2233 4455</p>
+                    <p class="footerHover">Mail@dinny.com</p>
+                </div>
+                <div>
+                    <h3>Information:</h3>
+                    <p class="footerHover">1234 5678 1011</p>
+                    <p>CVR: 9876543123</p>
+                </div>
+            </div>
+
+        </div>
 
     </footer>
-    
+
 </body>
+
 </html>
